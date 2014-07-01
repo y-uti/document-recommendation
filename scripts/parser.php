@@ -3,7 +3,7 @@
 function parse($line)
 {
     $tf = array();
-    $data = explode(' ', trim($line));
+    $data = explode(' ', rtrim($line));
     for ($i = 0; $i < count($data); $i += 2) {
         $tf[$data[$i]] = $data[$i + 1];
     }

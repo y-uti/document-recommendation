@@ -2,7 +2,7 @@
 
 while ($line = fgets(STDIN)) {
     $sum = 0;
-    $tfidf = explode(' ', trim($line));
+    $tfidf = explode(' ', rtrim($line));
     for ($i = 0; $i < count($tfidf); $i += 2) {
         $sum += pow($tfidf[$i + 1], 2);
     }
